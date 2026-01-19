@@ -33,6 +33,13 @@ All data is stored in JavaScript objects during runtime:
 - Each class contains:
   - A list of students
   - Attendance history keyed by date
+ 
+UI Elements
+- Modern typography(Google Fonts Inter)
+- Card sections with soft shadows
+- Georgetown-themed color palette (navy blue and gray)
+- Subtle icons for improved readability
+
 
 No external services or setup are required.
 
