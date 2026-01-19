@@ -3,22 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <title>Hoya Developers Attendance Tracker</title>
+
+  <!-- Import font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <h1>Hoya Developers Attendance Tracker</h1>
+  <h1>Georgetown Attendance Tracker</h1>
+
+  <!-- Create/Switch Class -->
+  <section>
+    <h2>Create / Switch Class</h2>
+    <input type="text" id="className" placeholder="Class Name (e.g. CS101)" />
+    <button id="createClassBtn">Set Active Class</button>
+    <p id="activeClass"></p>
+  </section>
 
   <!-- Add Student -->
   <section>
     <h2>Add Student</h2>
-    <input type="text" id="studentName" placeholder="Student Name" />
+    <input type="text" id="studentName" placeholder="Student Name (required)" />
+    <input type="text" id="netID" placeholder="NetID (optional)" />
     <button id="addStudentBtn">Add Student</button>
   </section>
 
   <!-- Take Attendance -->
   <section>
     <h2>Take Attendance</h2>
-    <p id="todayDate"></p>
+    <input type="date" id="attendanceDate" />
     <ul id="attendanceList"></ul>
     <button id="saveAttendanceBtn">Save Attendance</button>
   </section>
@@ -30,11 +44,7 @@
     <div id="historyDetails"></div>
   </section>
 
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-
-  <script src="firebase.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
+
